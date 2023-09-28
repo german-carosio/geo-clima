@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Variables*/
+
+:root {
+  --azul: #1A73E8;
+  --azul-claro: #669DF6;
+  --azul-claro2:rgb(187, 213, 255);
+  --azul-oscuro: #1555a8;
+  --gris: #C8C8C8;
+  --gris-claro: #ededf0;
+  --gris-oscuro: #888;
+  --gris-oscuro2: #444;
+  --blanco: #fff;
+  --negro: #000;
+  --rojo: #db0404;
+  --violeta: #8b1ae8;
+
+  --fuente-normal: 1em;
+  --fuente-chica: 0.8em;
+  --fuente-grande: 1.2em;
+  --fuente-grande2: 1.5em;
+}
+
+/*Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+    color: var(--negro);
+}
+
+button {
+    border: none;
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: var(--fuente-normal);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/*Main*/
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gris-claro);
+}
+
+.clima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
