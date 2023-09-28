@@ -56,12 +56,16 @@ function sucess(geolocationPosition) {
 
                 clima.innerHTML = `
                             <h2>${name}</h2>
-                            <img src="https://openweathermap.org/img/wn/${info.icon}@2x.png" alt="logo-clima">
-                            <p>${info.description}</p>
-                            <p>Temperatura: ${temp}°</p>
-                            <p>Max: ${temp_max}°</p>
-                            <p>Min: ${temp_min}°</p>
-                            <p>Humedad: ${humidity}%</p>
+                            <div class="info1">
+                                <img src="https://openweathermap.org/img/wn/${info.icon}@2x.png" alt="logo-clima">
+                                <p>${temp}°</p>
+                            </div>
+                                <p>${info.description.toUpperCase()}</p>
+                            <div class="info2">
+                                <p>Max: ${temp_max}°</p>
+                                <p>Min: ${temp_min}°</p>
+                                <p>Humedad: ${humidity}%</p>
+                            </div>
                             `
             } else if (response.status === 401) {
                 console.log('Estado 401: No tienes autoridad para acceder al recurso');

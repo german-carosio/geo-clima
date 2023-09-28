@@ -58,10 +58,33 @@ button {
     background-color: var(--gris-claro);
 }
 
+
+
 .clima {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.clima .info1 {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    margin: 10px;
+}
+
+
+.clima .info1 {
+    font-size: var(--fuente-grande2);
+}
+
+.clima .info2 {
+    margin-top: 20px;
+    line-height: 2em;
 }
