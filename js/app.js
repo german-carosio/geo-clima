@@ -14,14 +14,14 @@ var options = {
 
 function sucess (geolocationPosition) {
 
-    console.log(geolocationPosition);
+    //console.log(geolocationPosition);
 
     let coords = geolocationPosition.coords;
     let lat = coords.latitude;
     let lon = coords.longitude;
 
-    console.log(lat);
-    console.log(lon);
+    //console.log(lat);
+    //console.log(lon);
 
 
     const callApi = async () => {
@@ -40,17 +40,17 @@ function sucess (geolocationPosition) {
     
             const data = await response.json();
     
-            console.log(data);
+            //console.log(data);
 
             const {name, main:{temp, temp_min, temp_max},weather:[extra]} = data;
             
-            console.log(name);
-            console.log(temp);
-            console.log(temp_min);
-            console.log(temp_max);
-            console.log(extra.icon);
-            console.log(lat);
-            console.log(lon);
+            //console.log(name);
+            //console.log(temp);
+            //console.log(temp_min);
+            //console.log(temp_max);
+            //console.log(extra.icon);
+            //console.log(lat);
+            //console.log(lon);
     
             clima.innerHTML = `
                             <h2>${name}</h2>
